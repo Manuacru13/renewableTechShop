@@ -74,6 +74,7 @@ nav ul li a:hover {
 /* Sección Productos */
 .products {
     padding: 40px 20px;
+    text-align: center;
     background-color: var(--gris-claro);
 }
 
@@ -95,10 +96,12 @@ nav ul li a:hover {
     border: 1px solid var(--verde-pasto-claro);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* Tres cards por fila */
     text-align: center;
-    padding: 20px;
-    flex: 1 1 calc(33.33% - 40px);
     max-width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 }
 
 .card img {
@@ -110,6 +113,10 @@ nav ul li a:hover {
 .card h3 {
     color: var(--verde-bosque);
     margin: 10px 0;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Sección Reseñas */
@@ -137,6 +144,7 @@ nav ul li a:hover {
     padding-bottom: 60px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: var(--verde-bosque);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .review img {
     max-width: 100px; /* Tamaño fijo */
@@ -145,6 +153,10 @@ nav ul li a:hover {
     border-radius: 10px;
     display: block;
 }
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
 /*formulario de contacto con fondo de imagen */
 .contact-section {
@@ -197,4 +209,26 @@ footer {
     color: var(--blanco);
     text-align: center;
     padding: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .products-cards {
+        flex-direction: column;
+        gap: 20px; /* Ajusta el espacio entre elementos */
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .products-cards {
+        gap: 10px;
+    }
 }
