@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/renewable-energy.png"> 
+    <link rel="stylesheet" href="./style.css">
+
     <title>RenewableTechShop</title>
 </head>
 <body>
@@ -19,41 +25,71 @@
     </header>
     <main>
         
-        <section> <!-- Sección Productos -->
-
-        </section>
+        <!-- Sección Productos -->
+            <section id="products" class="products">
+                <h2>Productos Destacados</h2>
+                <div class="products-cards">
+                    <div class="card">
+                        <!-- <img src="./img/pexels-kindelmedia-9875419.jpg" alt="Panel Solar"> -->
+                        <h3>Panel Solar</h3>
+                        <p>Alta eficiencia y durabilidad.</p>
+                    </div>
+                    <div class="card">
+                        <!-- <img src="img/pexels-neon-joi-685205478-21046842.jpg" alt="Turbina Eólica"> -->
+                        <h3>Turbina Eólica</h3>
+                        <p>Genera energía limpia.</p>
+                    </div>
+                    <div class="card">
+                        <!-- <img src="./img/pexels-alex-197677521-11951153.jpg" alt="Batería"> -->
+                        <h3>Batería de Almacenamiento</h3>
+                        <p>Almacena energía renovable.</p>
+                    </div>
+                </div>
+            </section>
         
         <section><!-- Sección Video -->
 
         </section>
            
-        <section> <!-- Sección Reseñas -->
-
+        <!-- Sección Reseñas -->
+            section id="reviews" class="reviews">
+            <h2>Reseñas de Nuestros Clientes</h2>
+            <div class="reviews-grid">
+                <div class="review">
+                    <!-- <img src="./img/pexels-cliente1.jpg" alt="Cliente 1"> -->
+                    <p>"La calidad de los productos es excelente. ¡Muy recomendable!"</p>
+                    
+                </div>
+                <div class="review">
+                    <!-- <img src="./img/pexels-cliente2.jpg" alt="Cliente 2"> -->
+                    <p>"Excelente servicio al cliente y entrega rápida."</p>
+                </div>
+                <div class="review">
+                    <!-- <img src="./img/pexels-cliente3.jpg" alt="Cliente 3"> -->
+                    <p>"Los paneles solares funcionan de maravilla. Muy satisfecho."</p>
+                </div>
+            </div>
         </section>
 
         <!-- Sección Contacto -->
         <section id="contact" class="contact-section">
                 <h2>Contacto</h2>
                 <form action="https://formspree.io/f/xpwzrnvl" method="POST">
-
                     <div class="form-control">
                         <label for="name">Nombre:</label>
                         <input type="text" id="name" name="name" required>
                     </div>
-
                     <div class="form-control">
                         <label for="email">Correo Electrónico:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-
                     <div class="form-control">
                         <label for="message">Mensaje:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    
                     <button type="submit">Enviar</button>
                 </form>
-        </section>
+            </section>
     </main>
 
     <footer>

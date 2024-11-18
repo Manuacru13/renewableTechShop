@@ -1,0 +1,200 @@
+:root {
+    --verde-bosque: #2e7d32;     
+    --verde-pasto-claro: #66CDAA; 
+    --amarillo-dorado: #FFD700;  
+    --azul-claro: #87CEFA;       
+    --gris-claro: #D3D3D3;      
+    --blanco: #FFFFFF;           
+    --fondo-header: linear-gradient(to right,  #145A32, #28A745);  /* Degradado verde */
+    /*--fondo-contact: url('./img/pexels-teona-swift-6912818.jpg') no-repeat center center/cover; /* Imagen de fondo en la sección de contacto */   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General*/
+body {
+    font-family: 'Geist mono', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--gris-claro);
+    color: var(--verde-bosque);
+}
+
+/* Header con fondo degradado */
+header {
+    background: var(--fondo-header);  /*fondo degradado */
+    color: var(--blanco);
+    padding: 40px 0;  
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Lora', serif; 
+    font-size: 2.5em;
+}
+
+/* Estilos de la lista de navegación */
+nav {
+    background-color: var(--verde-pasto-claro);
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: var(--azul-claro);
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Sección Productos */
+.products {
+    padding: 40px 20px;
+    background-color: var(--gris-claro);
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--verde-bosque);
+}
+
+.products-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--blanco);
+    border: 1px solid var(--verde-pasto-claro);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    flex: 1 1 calc(33.33% - 40px);
+    max-width: 300px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: var(--verde-bosque);
+    margin: 10px 0;
+}
+
+/* Sección Reseñas */
+.reviews {
+    padding: 40px 20px;
+    background-color: var(--verde-pasto-claro);
+}
+
+.reviews h2 {
+    text-align: center;
+    color: var(--verde-bosque);
+    margin-bottom: 20px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.review {
+    background-color: var(--blanco);
+    border-radius: 10px;
+    padding-bottom: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--verde-bosque);
+}
+.review img {
+    max-width: 100px; /* Tamaño fijo */
+    height: auto;
+    margin: 0 auto 15px auto; /* Centrado */
+    border-radius: 10px;
+    display: block;
+}
+
+/*formulario de contacto con fondo de imagen */
+.contact-section {
+    padding: 20px;
+    background: var(--fondo-contact); /* Fondo con imagen */
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+.form-control label{
+    display: block;
+    margin-bottom: 5px;
+    color: var(--verde-bosque);
+}
+
+.form-control input, .form-control textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gris-claro);
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--amarillo-dorado);
+    color: var(--verde-bosque);
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--verde-pasto-claro);
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--verde-bosque);
+    color: var(--blanco);
+    text-align: center;
+    padding: 10px 0;
+}
