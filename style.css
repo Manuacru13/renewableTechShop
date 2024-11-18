@@ -6,7 +6,7 @@
     --gris-claro: #D3D3D3;      
     --blanco: #FFFFFF;           
     --fondo-header: linear-gradient(to right,  #145A32, #28A745);  /* Degradado verde */
-    /*--fondo-contact: url('./img/pexels-teona-swift-6912818.jpg') no-repeat center center/cover; /* Imagen de fondo en la sección de contacto */   
+    --fondo-contact: url('./img/pexels-teona-swift-6912818.jpg') no-repeat center center/cover; /* Imagen de fondo en la sección de contacto */   
 }
 
 * {
@@ -70,6 +70,15 @@ nav ul li a:hover {
     height: 50px;
     width: auto;
 }
+
+iframe {
+    border: none;
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 5px;
+}
+
 
 /* Sección Productos */
 .products {
@@ -147,7 +156,7 @@ nav ul li a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .review img {
-    max-width: 100px; /* Tamaño fijo */
+    width: 50%;
     height: auto;
     margin: 0 auto 15px auto; /* Centrado */
     border-radius: 10px;
