@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/renewable-energy.png">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/729ae4c00a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./index.html">
+    <title>RenewableTechShop</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-md">
+                <span class="navbar-brand text-light fs-4">
+                    <img src="./img/logo-renewableTechShop.webp" alt="RenewableTechShop Logo" class="logo rounded-circle me-3" />
+                    RenewableTechShop
+                </span>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid menu-icon fa-bars text-light w-100"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex align-items-center ms-auto gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link p-2 focus-ring rounded link text-light" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2 focus-ring rounded link text-light" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2 focus-ring rounded link text-light" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./carrito.html">
+                                <i class="fas fa-shopping-cart fs-5"></i>
+                                <span id="cart-count" class="badge bg-danger">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrito de compras -->
+    <div class="container mt-5">
+        <h2 class="mb-4">Carrito de Compras</h2>
+
+        <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="carrito-items">
+                <!-- Aquí se cargarán los productos del carrito -->
+            </tbody>
+        </table>
+
+        <div class="text-end mb-3">
+            <h4>Total: $<span id="total">0</span></h4>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <button id="limpiar-carrito" class="btn btn-danger">Volver al Inicio</button>
+            <button id="finalizar-compra" class="btn btn-success">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <footer class="text-white pt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Información de la empresa -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3" style="font-family: 'Poppins', sans-serif;">RenewableTechShop S.R.L.</h5>
+                    <p height: 200px; >
+                        RenewableTechShop es una empresa innovadora que ofrece soluciones en energías renovables para
+                        hogares, empresas y comunidades. Con un enfoque sostenible, proporcionamos productos de alta calidad
+                        para impulsar un futuro más verde.
+                    </p>
+                </div>
+    
+                <!-- Enlaces -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3" style="font-family: 'Poppins', sans-serif;">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-decoration-none link-hover">Inicio</a></li>
+                        <li><a href="#nosotros" class="text-decoration-none link-hover">Sobre Nosotros</a></li>
+                        <li><a href="#servicios" class="text-decoration-none link-hover">Servicios</a></li>
+                        <li><a href="#contacto" class="text-decoration-none link-hover">Contacto</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Redes sociales -->
+                <div class="col-lg-4 col-md-12 mb-4 text-lg-start text-center">
+                    <h5 class="text-uppercase mb-3" style="font-family: 'Poppins', sans-serif;">Síguenos</h5>
+                    <div class="d-flex justify-content-lg-start justify-content-center gap-3">
+                        <a href="#" class="text-decoration-none link-hover fs-4"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-decoration-none link-hover fs-4"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-decoration-none link-hover fs-4"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-decoration-none link-hover fs-4"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Línea divisoria -->
+            <hr class="border-secondary my-4">
+    
+            <!-- Derechos de autor -->
+            <div class="text-center pb-3">
+                <p class="mb-0 text-secondary">
+                    © 2024 RenewableTechShop. Desarrollado para <a href="https://inscripcionesagencia.bue.edu.ar/talentotech/"
+                        class="text-white text-decoration-none link-hover">Talento Tech</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

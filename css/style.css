@@ -1,0 +1,219 @@
+:root {
+    --verde-bosque: #2e7d32;
+    --verde-pasto-claro: #66CDAA;
+    --amarillo-dorado: #FFD700;
+    --azul-claro: #87CEFA;
+    --gris-claro: #D3D3D3;
+    --blanco: #FFFFFF;
+    --fondo-header: linear-gradient(90deg,  #145A32, #28A745);  /* Degradado verde */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gris-claro);
+   
+}
+
+.title {
+    color: var(--verde-bosque);
+}
+
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    background-image: url('/img/pexels-shottrotter-735468.jpg');
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;    
+    color: var(--azul-claro);
+  }
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    color: var(--blanco);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--verde-bosque);
+    text-decoration: solid;
+    transform: scale(1.1); 
+}
+
+
+/* Icono del carrito */
+.navbar-nav .fas {
+    font-size: 1.2rem;
+    color: var(--verde-bosque);
+}
+
+.navbar-toggler-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    transform: rotate(90deg);
+}
+
+
+/* Logo */
+.logo {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    transform: rotate(10deg) scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Carrusel */
+.carousel-inner img {
+    height: 500px; 
+    object-fit: cover; 
+}
+
+/*cards*/
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);  /* Mueve la card hacia arriba */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);  /*sombra más grande */
+    border: 2px solid var(--verde-bosque);
+    
+}
+
+.card-img-top {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.card-img-top:hover {
+    transform: scale(1.1); /*imagen al 110% */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+}
+
+.btn-success:hover {
+    background-color: var(--verde-pasto-claro); 
+    color: var(--amarillo-dorado);
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.text-center {
+    color:var(--verde-bosque)
+}
+
+
+        /* Personalización para una tabla más atractiva */
+        .table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .table th, .table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .table th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: #d6eaf8;
+        }
+    
+td img{
+    width: 40px;
+}
+
+.link-hover {
+    transition: color 0.3s ease;
+}
+
+.link-hover:hover {
+    color: var(--verde-bosque); 
+    text-decoration: underline;
+}
+
+footer {
+    background-image: url('/img/pexels-neon-joi-685205478-21046842.jpg');  
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;     
+    padding-top: 50px;                
+    padding-bottom: 50px;            
+}
+
+footer .container {
+    position: relative; /* Asegura que los contenidos estén por encima de la imagen */
+}
+
+footer p, footer a {
+
+    font-size: 0.9rem;
+    color: var(--verde-bosque);
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: var(--verde-bosque);
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#logo-animation {
+    width: 150px;
+    animation: float 2s ease-in-out, fadeOut 2s ease-out 2s forwards;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
