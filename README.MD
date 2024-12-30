@@ -15,6 +15,7 @@ Formulario de contacto: Formulario funcional que permite enviar consultas usando
 Secciones principales: Estructura HTML semántica con <header>, <nav>, <main>, <section>, y <footer>.
 Estilos personalizados: CSS externo con Google Fonts, fondos y estilos responsivos mediante Flexbox, Grid y Bootstrap.
 JavaScript: Mejora la interactividad y maneja el comportamiento dinámico de la página.
+
 Tecnologías Utilizadas
 
 HTML5: Estructura semántica y accesible.
